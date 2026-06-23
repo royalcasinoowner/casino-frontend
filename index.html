@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/app-icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- SEO — Default values (overwritten at runtime by the script) -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <title>Royal Casino – Best Online Casino &amp; Betting Games</title>
+    <meta name="description"    content="Play the best online casino games at Royal Casino. Enjoy betting, gambling, Aviator crash game, Teen Patti, Roulette and more. Win real cash prizes!" />
+    <meta name="keywords"       content="royal casino, casino, online casino, betting, gambling, aviator, crash game, teen patti, roulette, win real money, casino india" />
+    <meta name="robots"         content="index, follow" />
+    <link rel="canonical"       id="seo-canonical" />
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Royal Casino – Best Online Casino &amp; Betting Games" id="seo-og-title" />
+    <meta property="og:description" content="Play the best online casino games at Royal Casino." id="seo-og-desc" />
+    <meta property="og:url"         id="seo-og-url" />
+    <meta property="og:image"       id="seo-og-image" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Royal Casino – Best Online Casino &amp; Betting Games" id="seo-tw-title" />
+    <meta name="twitter:description" content="Play the best online casino games at Royal Casino." id="seo-tw-desc" />
+    <meta name="twitter:image"       id="seo-tw-image" />
+
+    <!-- Inline script: fetches live SEO settings from the server & updates meta tags.
+         Runs synchronously before React loads so crawlers that execute JS see correct data.  -->
+    <script>
+      (function() {
+        var BASE = (function() {
+          var l = window.location;
+          // Works for both dev (localhost:5173 → proxy to :3000) and production (same origin)
+          return l.protocol + '//' + l.host;
+        })();
+
+        function setMeta(selector, attr, value) {
+          var el = document.querySelector(selector);
+          if (el && value) el.setAttribute(attr, value);
+        }
+        function setElText(id, value) {
+          var el = document.getElementById(id);
+          if (el && value) el.textContent = value;
+        }
+
+        function applySettings(s) {
+          if (!s) return;
+          // <title>
+          if (s.seo_title) document.title = s.seo_title;
+          // <meta name="description">
+          setMeta('meta[name="description"]',    'content', s.seo_description);
+          // <meta name="keywords">
+          setMeta('meta[name="keywords"]',       'content', s.seo_keywords);
+          // Open Graph
+          setMeta('#seo-og-title',               'content', s.seo_title);
+          setMeta('#seo-og-desc',                'content', s.seo_description);
+          setMeta('#seo-og-url',                 'content', BASE);
+          setMeta('#seo-og-image',               'content', s.seo_og_image || '');
+          // Twitter
+          setMeta('#seo-tw-title',               'content', s.seo_title);
+          setMeta('#seo-tw-desc',                'content', s.seo_description);
+          setMeta('#seo-tw-image',               'content', s.seo_og_image || '');
+          // Canonical
+          var can = document.getElementById('seo-canonical');
+          if (can) can.setAttribute('href', BASE);
+        }
+
+        try {
+          fetch(BASE + '/api/settings/system')
+            .then(function(r) { return r.json(); })
+            .then(function(data) { if (data && data.success) applySettings(data); })
+            .catch(function() {});
+        } catch(e) {}
+      })();
+    </script>
+
+    <style>
+      .loader-logo {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+        animation: glitch-single 3s infinite linear;
+      }
+
+      @keyframes glitch-single {
+        0%, 88% { 
+          transform: translate(0, 0) scale(1); 
+          filter: drop-shadow(0 0 15px rgba(212,175,55,0.4)) hue-rotate(0deg); 
+        }
+        90% { 
+          transform: translate(-4px, 2px) scale(1.05) skewX(10deg); 
+          filter: drop-shadow(-4px 0 15px #ff007f) hue-rotate(90deg); 
+        }
+        92% { 
+          transform: translate(4px, -2px) scale(0.95) skewX(-10deg); 
+          filter: drop-shadow(4px 0 15px #00f3ff) hue-rotate(-90deg); 
+        }
+        94% { 
+          transform: translate(-2px, 4px) scale(1.02) skewX(5deg); 
+          filter: drop-shadow(0 -4px 15px #2ecc71) hue-rotate(45deg); 
+        }
+        96% { 
+          transform: translate(2px, -4px) scale(0.98) skewX(-5deg); 
+          filter: drop-shadow(0 4px 15px #ffd700) hue-rotate(-45deg); 
+        }
+        98%, 100% { 
+          transform: translate(0, 0) scale(1); 
+          filter: drop-shadow(0 0 25px rgba(212,175,55,0.8)) hue-rotate(0deg); 
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CET5e2yv.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-DdACKOZr.js">
+    <link rel="modulepreload" crossorigin href="/assets/pixi-DPG6r_5T.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-Dr_5VOod.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-C8sRwJD0.js">
+    <link rel="modulepreload" crossorigin href="/assets/socket-OpvTuitv.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-ChUzf-Ug.js">
+    <link rel="stylesheet" crossorigin href="/assets/vendor-CSeJ2TMP.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-DTogtvLf.css">
+  </head>
+  <body>
+    <div id="initial-loader" style="position: fixed; inset: 0; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle at center, #021206 0%, #010a04 100%); overflow: hidden; z-index: 9999;">
+      <img src="/images/logo-transparent.webp" class="loader-logo" alt="Royal Casino" />
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
+
